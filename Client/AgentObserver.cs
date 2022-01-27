@@ -143,6 +143,28 @@ namespace Client
         }
     }
 
+    public class BatchContainer : IBatchContainer
+    {
+        public IEnumerable<Tuple<T, StreamSequenceToken>> GetEvents<T>()
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool ImportRequestContext()
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool ShouldDeliver(IStreamIdentity stream, object filterData, StreamFilterPredicate shouldReceiveFunc)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Guid StreamGuid { get; }
+        public string StreamNamespace { get; }
+        public StreamSequenceToken SequenceToken { get; }
+    }
+
     public class KafkaProvider : PersistentStreamProvider
     {
         public KafkaProvider(string name, StreamPubSubOptions pubsubOptions, StreamLifecycleOptions lifeCycleOptions, IProviderRuntime runtime, SerializationManager serializationManager, ILogger<PersistentStreamProvider> logger)

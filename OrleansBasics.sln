@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiloServer", "SiloServer\SiloServer.csproj", "{F09EF16B-0992-4BD2-8EDF-5C401EF5F489}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KafkaStreamAdapter", "KafkaStreamAdapter\KafkaStreamAdapter.csproj", "{D8793275-7D4E-4DD5-BEBF-BE69BB629826}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{F09EF16B-0992-4BD2-8EDF-5C401EF5F489}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F09EF16B-0992-4BD2-8EDF-5C401EF5F489}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F09EF16B-0992-4BD2-8EDF-5C401EF5F489}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8793275-7D4E-4DD5-BEBF-BE69BB629826}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8793275-7D4E-4DD5-BEBF-BE69BB629826}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8793275-7D4E-4DD5-BEBF-BE69BB629826}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8793275-7D4E-4DD5-BEBF-BE69BB629826}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
